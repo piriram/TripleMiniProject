@@ -15,7 +15,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		4E8AC5592E20F2B400F718DA /* Exceptions for "TripleMiniProject" folder in "TripleMiniProject" target */ = {
+		4E87C8362E261900009D6EBE /* Exceptions for "TripleMiniProject" folder in "TripleMiniProject" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -25,10 +25,15 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4E8AC5492E20F2B300F718DA /* TripleMiniProject */ = {
+		4E87C7F02E2618F4009D6EBE /* New Folder */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "New Folder";
+			sourceTree = "<group>";
+		};
+		4E87C8262E261900009D6EBE /* TripleMiniProject */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				4E8AC5592E20F2B400F718DA /* Exceptions for "TripleMiniProject" folder in "TripleMiniProject" target */,
+				4E87C8362E261900009D6EBE /* Exceptions for "TripleMiniProject" folder in "TripleMiniProject" target */,
 			);
 			path = TripleMiniProject;
 			sourceTree = "<group>";
@@ -50,7 +55,8 @@
 		4E8AC53E2E20F2B300F718DA = {
 			isa = PBXGroup;
 			children = (
-				4E8AC5492E20F2B300F718DA /* TripleMiniProject */,
+				4E87C8262E261900009D6EBE /* TripleMiniProject */,
+				4E87C7F02E2618F4009D6EBE /* New Folder */,
 				4E8AC5482E20F2B300F718DA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,7 +85,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				4E8AC5492E20F2B300F718DA /* TripleMiniProject */,
+				4E87C7F02E2618F4009D6EBE /* New Folder */,
+				4E87C8262E261900009D6EBE /* TripleMiniProject */,
 			);
 			name = TripleMiniProject;
 			packageProductDependencies = (
