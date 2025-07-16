@@ -28,7 +28,6 @@
         <!--Popular City View Controller-->
         <scene sceneID="1ZK-An-GQP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Upo-ug-mfp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="QrM-Mz-ago" customClass="PopularCityViewController" customModule="TripleMiniProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0G5-sr-hrC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -67,8 +66,66 @@
                         <outlet property="tableView" destination="Mzr-3f-3Vo" id="lDQ-dD-Ccy"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Upo-ug-mfp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="437" y="-303"/>
+        </scene>
+        <!--City Detail View Controller-->
+        <scene sceneID="FDr-QT-bp7">
+            <objects>
+                <viewController storyboardIdentifier="CityDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KSX-Lt-6ss" customClass="CityDetailViewController" customModule="TripleMiniProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dpP-gz-b0O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NUu-Hn-DRG">
+                                <rect key="frame" x="40" y="100" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Kf9-k8-QNd"/>
+                                    <constraint firstAttribute="height" constant="240" id="YF0-Nb-mBw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKz-cL-Z9z">
+                                <rect key="frame" x="70" y="360" width="180" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Dgg-pg-qZA"/>
+                                    <constraint firstAttribute="width" constant="180" id="q1k-xF-ie3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ft4-ga-jSa">
+                                <rect key="frame" x="70" y="405" width="180" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="V96-Nq-73Q"/>
+                                    <constraint firstAttribute="width" constant="180" id="eF9-g2-XW5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ty4-VY-Bqa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ft4-ga-jSa" firstAttribute="top" secondItem="EKz-cL-Z9z" secondAttribute="bottom" constant="5" id="1Ft-6R-DoG"/>
+                            <constraint firstItem="ft4-ga-jSa" firstAttribute="centerX" secondItem="dpP-gz-b0O" secondAttribute="centerX" id="9fQ-3T-d86"/>
+                            <constraint firstItem="NUu-Hn-DRG" firstAttribute="top" secondItem="ty4-VY-Bqa" secondAttribute="top" constant="80" id="Jb2-JB-UCE"/>
+                            <constraint firstItem="EKz-cL-Z9z" firstAttribute="centerX" secondItem="dpP-gz-b0O" secondAttribute="centerX" id="a76-37-vLr"/>
+                            <constraint firstItem="EKz-cL-Z9z" firstAttribute="top" secondItem="NUu-Hn-DRG" secondAttribute="bottom" constant="20" id="yD3-VA-WDF"/>
+                            <constraint firstItem="NUu-Hn-DRG" firstAttribute="centerX" secondItem="dpP-gz-b0O" secondAttribute="centerX" id="yn5-Pc-MFw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityImageView" destination="NUu-Hn-DRG" id="cpy-ss-RGA"/>
+                        <outlet property="cityNameLabel" destination="EKz-cL-Z9z" id="hX8-Qp-aSC"/>
+                        <outlet property="citySubtitleLabel" destination="ft4-ga-jSa" id="D2R-FB-phy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9kF-D5-MWv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1306" y="-346"/>
         </scene>
         <!--도시 상세 정보-->
         <scene sceneID="bww-qB-KBb">

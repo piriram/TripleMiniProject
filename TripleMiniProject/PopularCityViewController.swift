@@ -39,4 +39,14 @@ class PopularCityViewController: UIViewController, UITableViewDelegate, UITableV
         print("\(indexPath.row): \(citys[indexPath.row].city_name)")
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(self, #function)
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "CityDetailViewController") as! CityDetailViewController
+        vc.cityInfo = citys[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
+    }
+          
+         
 }
