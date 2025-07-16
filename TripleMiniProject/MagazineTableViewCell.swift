@@ -12,7 +12,7 @@ class MagazineTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
-    
+     
     override func awakeFromNib() {
         super .awakeFromNib()
         selectionStyle = .none // 선택시 배경색 회색으로 바꾸는거 없애기
